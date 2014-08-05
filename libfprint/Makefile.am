@@ -9,6 +9,7 @@ UPEKSONLY_SRC = drivers/upeksonly.c
 URU4000_SRC = drivers/uru4000.c
 AES1610_SRC = drivers/aes1610.c
 AES1660_SRC = drivers/aes1660.c drivers/aes1660.h
+ETSS801U_SRC = drivers/etss801u.c drivers/etss801u.h
 AES2501_SRC = drivers/aes2501.c drivers/aes2501.h
 AES2550_SRC = drivers/aes2550.c drivers/aes2550.h
 AES2660_SRC = drivers/aes2660.c drivers/aes2660.h
@@ -40,6 +41,7 @@ EXTRA_DIST = \
 	$(VFS301_SRC)		\
 	$(UPEKTC_IMG_SRC)	\
 	$(ETES603_SRC)		\
+	$(ETSS801U_SRC)     \
 	drivers/aesx660.c	\
 	drivers/aesx660.h	\
 	drivers/aes3k.c 	\
@@ -175,6 +177,8 @@ endif
 if ENABLE_ETES603
 DRIVER_SRC += $(ETES603_SRC)
 endif
+
+DRIVER_SRC += $(ETSS801U_SRC)
 
 if REQUIRE_PIXMAN
 OTHER_SRC += pixman.c

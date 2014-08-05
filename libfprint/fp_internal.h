@@ -302,6 +302,7 @@ extern struct fp_img_driver upektc_img_driver;
 #ifdef ENABLE_ETES603
 extern struct fp_img_driver etes603_driver;
 #endif
+extern struct fp_img_driver etss801u_driver;
 
 extern libusb_context *fpi_usb_ctx;
 extern GSList *opened_devices;
